@@ -1,0 +1,23 @@
+spring:
+  web:
+    resources:
+      static-locations: classpath:templates
+  mvc:
+    view:
+      suffix: .html
+
+logging:
+  level:
+    web: debug
+
+feign:
+  client:
+    config:
+      usd:
+        connectTimeout: 5000
+        readTimeout: 5000
+      gif:
+        connectTimeout: 5000
+        readTimeout: 5000
+
+
